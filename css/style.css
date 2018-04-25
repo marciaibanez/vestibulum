@@ -4,8 +4,16 @@ body {
 
 nav {
     background-color: #76c7c0;
+    font-size: 1em;
 }
 
+brand {
+    color: #f8f8f8;
+    font-size: 1.5em;
+}
+.nav-link {
+    color: #f8f8f8;
+}
 .windows {
     max-width: 1500px;
     margin: 5rem auto;
@@ -88,9 +96,14 @@ nav {
     margin: .3rem;
 }
 
-.test {
-    margin: 0 auto;
-    width: 500px;
+.your-image {
+    color: #f8f8f8;
+    text-align: center;
+    padding-top: 4em;
+}
+
+.charts {
+    width: 4em;
 }
 
 /*

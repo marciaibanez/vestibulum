@@ -1,4 +1,8 @@
-var ctx = document.getElementById('myChart').getContext('2d');
+
+var ctx1 = document.getElementById("chart1").getContext("2d");
+var ctx2 = document.getElementById("chart2").getContext("2d");
+var ctx3 = document.getElementById("chart3").getContext("2d");
+var ctx4 = document.getElementById("chart4").getContext("2d");
 
 var config = {
     type: 'doughnut',
@@ -9,8 +13,8 @@ var config = {
                 50
             ],
             backgroundColor: [
-                'rgb(255, 99, 132)',
-                'rgb(54, 162, 235)'
+                '#e8665c',
+                '#6ab3ac'
             ]
         }],
         labels: [
@@ -30,4 +34,4 @@ var config = {
     }
 };
 
-var myPieChart = new Chart(ctx, config);
+var myPieChart = new Chart(ctx1, ctx2, ctx3, ctx4, config);
