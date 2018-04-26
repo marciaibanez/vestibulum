@@ -2,18 +2,91 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-nav {
+header {
     background-color: #76c7c0;
     font-size: 1em;
 }
 
-brand {
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    
+}
+
+nav li {
+    margin: 1rem;
+    border-radius: 5px;
+    color: #f8f8f8;
+    background-color: #76c7c0;
+    border-style: none;
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+nav li:hover {
+    color: #f8f8f8;
+    background-color: #66a9a4;
+}
+
+nav li:active {
+    color: #f8f8f8;
+    background-color: #e8665c;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f8f8f8;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.brand {
     color: #f8f8f8;
     font-size: 1.5em;
+    margin: 2rem 1rem;
 }
-.nav-link {
-    color: #f8f8f8;
+
+.dropdown {
+    position: relative;
 }
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f8665c;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    top: 3rem;
+    left: 0;
+}
+
+.dropdown-menu li {
+    background-color: #f77c73;
+
+}
+
+.dropdown:hover .arrow {
+    display: none;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f8665c;
+    transform: rotate(45deg);
+    top: 2.7rem;
+    left: 1rem;
+}
+
 .windows {
     max-width: 1500px;
     margin: 5rem auto;
@@ -108,5 +181,5 @@ brand {
 
 /*
 color: #7f8c8c #e8665c #b9e2df #f8f8f8 ;
-#ececec #b0b8b9 #6ab3ac #5e9f9a #e66a62 #65a4a0 
+#ececec #b0b8b9 #6ab3ac  #e66a62 
 */

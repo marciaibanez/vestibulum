@@ -1,37 +1,71 @@
-
-var ctx1 = document.getElementById("chart1").getContext("2d");
-var ctx2 = document.getElementById("chart2").getContext("2d");
-var ctx3 = document.getElementById("chart3").getContext("2d");
-var ctx4 = document.getElementById("chart4").getContext("2d");
-
-var config = {
-    type: 'doughnut',
-    data: {
-        datasets: [{
-            data: [
-                50,
-                50
-            ],
-            backgroundColor: [
-                '#e8665c',
-                '#6ab3ac'
-            ]
-        }],
-        labels: [
-            "red",
-            "blue"
-        ]
+const chartConfig = [
+    {
+        id: 'chart1',
+        blueValue: 50,
+        redValue: 50
     },
-    options: {
-        rotation: 1 * Math.PI,
-        circumference: 1 * Math.PI,
-        responsive: true,
-        legend: false,
-        title: false,
-        animation: {
-            animateRotate: true
-        }
+    {
+        id: 'chart2',
+        blueValue: 70,
+        redValue: 30
+    },
+    {
+        id: 'chart3',
+        blueValue: 80,
+        redValue: 20
+    },
+    {
+        id: 'chart4',
+        blueValue: 100,
+        redValue: 0
     }
-};
+];
 
-var myPieChart = new Chart(ctx1, ctx2, ctx3, ctx4, config);
+chartConfig.forEach(function(config, i) {
+    new Chart(document.getElementById(config.id).getContext("2d"), {
+        type: 'doughnut',
+        data: {
+            datasets: [{
+                data: [
+                    config.blueValue,
+                    config.redValue
+                ],
+                backgroundColor: [
+                    '#e8665c',
+                    '#6ab3ac'
+                ]
+            }],
+            labels: [
+                "red",
+                "blue"
+            ]
+        },
+        options: {
+            rotation: 1 * Math.PI,
+            circumference: 1 * Math.PI,
+            responsive: true,
+            legend: false,
+            title: false,
+            animation: {
+                animateRotate: true
+            }
+        }
+    });
+});
+
+const portfolioButton = document.getElementById("portfolio");
+const portfolioMenu = document.getElementById("portfolioMenu");
+const dropdownMenuArrow = document.getElementById("dropdownMenuArrow");
+
+let isMenuOpened = false;
+portfolioButton.addEventListener("click", function() {
+    if (!isMenuOpened) {
+        portfolioMenu.style.display = 'block';
+        dropdownMenuArrow.style.display = 'block';
+        isMenuOpened = true;
+    } else {
+        portfolioMenu.style.display = 'none';
+        dropdownMenuArrow.style.display = 'none';
+        isMenuOpened = false;
+    }
+});
