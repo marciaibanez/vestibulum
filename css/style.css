@@ -52,8 +52,17 @@ nav a {
 
 .brand {
     color: #f8f8f8;
-    font-size: 1.5em;
     margin: 2rem 1rem;
+}
+
+.modus {
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.versus {
+    font-weight: lighter;
+    font-size: 1.7rem;
 }
 
 .dropdown {
@@ -76,7 +85,7 @@ nav a {
 
 }
 
-.dropdown:hover .arrow {
+.dropdown .arrow {
     display: none;
     position: absolute;
     width: 10px;
@@ -179,6 +188,9 @@ nav a {
     width: 4em;
 }
 
+#portfolioMenu {
+    width: 150px;
+}
 /*
 color: #7f8c8c #e8665c #b9e2df #f8f8f8 ;
 #ececec #b0b8b9 #6ab3ac  #e66a62 

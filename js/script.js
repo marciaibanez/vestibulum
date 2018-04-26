@@ -69,3 +69,13 @@ portfolioButton.addEventListener("click", function() {
         isMenuOpened = false;
     }
 });
+
+const allButHeader = document.querySelectorAll("body > *:not(header)");
+
+allButHeader.forEach((el, i) => {
+    el.addEventListener("click", function () {
+        portfolioMenu.style.display = 'none';
+        dropdownMenuArrow.style.display = 'none';
+        isMenuOpened = false;
+    });
+})
