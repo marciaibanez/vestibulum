@@ -1,0 +1,20 @@
+{
+  "name": "vestibulum",
+  "homepage": "https://github.com/marciaibanez/vestibullum",
+  "authors": [
+    "Marcia Ibanez <marcia.ibanez.1@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "wallop": "^2.4.1"
+  }
+}

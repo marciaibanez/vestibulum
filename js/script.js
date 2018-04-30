@@ -1,5 +1,4 @@
-const chartConfig = [
-    {
+const chartConfig = [{
         id: 'chart1',
         blueValue: 50,
         redValue: 50
@@ -21,7 +20,7 @@ const chartConfig = [
     }
 ];
 
-chartConfig.forEach(function(config, i) {
+chartConfig.forEach((config, i) => {
     new Chart(document.getElementById(config.id).getContext("2d"), {
         type: 'doughnut',
         data: {
@@ -33,16 +32,18 @@ chartConfig.forEach(function(config, i) {
                 backgroundColor: [
                     '#e8665c',
                     '#6ab3ac'
-                ]
+                ],
+                hoverBackgroundColor: [
+                    '#e8665c',
+                    '#6ab3ac'
+                ],
+                borderWidth: [0, 0]
             }],
-            labels: [
-                "red",
-                "blue"
-            ]
         },
         options: {
             rotation: 1 * Math.PI,
             circumference: 1 * Math.PI,
+            cutoutPercentage: 70,
             responsive: true,
             legend: false,
             title: false,
@@ -58,7 +59,7 @@ const portfolioMenu = document.getElementById("portfolioMenu");
 const dropdownMenuArrow = document.getElementById("dropdownMenuArrow");
 
 let isMenuOpened = false;
-portfolioButton.addEventListener("click", function() {
+portfolioButton.addEventListener("click", () => {
     if (!isMenuOpened) {
         portfolioMenu.style.display = 'block';
         dropdownMenuArrow.style.display = 'block';
@@ -73,9 +74,12 @@ portfolioButton.addEventListener("click", function() {
 const allButHeader = document.querySelectorAll("body > *:not(header)");
 
 allButHeader.forEach((el, i) => {
-    el.addEventListener("click", function () {
+    el.addEventListener("click", () => {
         portfolioMenu.style.display = 'none';
         dropdownMenuArrow.style.display = 'none';
         isMenuOpened = false;
     });
-})
+});
+
+const wallopEl = document.querySelector('.Wallop');
+const slider = new Wallop(wallopEl);

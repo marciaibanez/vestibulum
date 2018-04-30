@@ -1,0 +1,43 @@
+.cards {
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+
+.cards h4 {
+    color: #687272;
+    font-weight: 700;
+}
+
+.card-text {
+    font-size: 0.8rem;
+    color: #687272;
+}
+
+.card {
+    flex-basis: 300px;
+    text-align: center;
+    background: #F8F8F8;
+    border-radius: 5px;
+    padding: 3rem 1rem;
+    box-shadow: 0 3px rgba(0, 0, 0, .05);
+    fill: #76c7c0;
+}
+
+.card:active svg {
+    fill: #e8665c;
+}
+
+.card:active {
+    background-color: #fff;
+}
+
+.card .button-secondary {
+    position: relative;
+    top: 55px;
+}
+
+.card .button-secondary:active {
+    color: #f8f8f8;
+    background-color: #e8665c;
+    border-bottom-color: #b8453d;
+}

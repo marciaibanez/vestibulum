@@ -1,0 +1,28 @@
+.clients-say {
+    flex-basis: 20%;
+}
+
+.clients-say h5 {
+    color: #7f8c8c;
+    font-size: 1rem;
+}
+
+.clients-say h6 {
+    color: #7f8c8c;
+    font-size: 0.8rem;
+}
+
+.clients-say p {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #7f8c8c;
+    background-color: #FFF;
+    padding: 1rem;
+    border-radius: 5px;
+    line-height: 1.5rem; 
+}
+
+.client-name {
+    display: inline;
+    font-size: 0.8rem;
+}

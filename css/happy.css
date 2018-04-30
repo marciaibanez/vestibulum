@@ -1,0 +1,33 @@
+.fa-arrow-right {
+    color: #e8645a;
+    font-size: 0.8rem;
+}
+
+.happy-clients img {
+    display: grid;
+    margin-right: 1rem; 
+    margin-bottom: 3rem;
+    border-radius: 3px;
+}
+
+.happy-clients h4 {
+    font-size: 1rem;
+    color: #687272;
+    font-weight: 700;
+    flex-basis: 20%;
+}
+
+.happy-clients .button-secondary {
+    background-color: #f8665c;
+    border-bottom-color: #b8453d;
+    padding: 0.5rem 0.8rem;
+    flex-basis: 20%;
+}
+
+.happy-clients .button-secondary .fas.fa-chevron-left {
+    font-size: 1rem;
+}
+
+.happy-clients .button-secondary .fas.fa-chevron-right {
+    font-size: 1rem;
+}

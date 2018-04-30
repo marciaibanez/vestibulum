@@ -1,0 +1,118 @@
+.brand p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+
+}
+
+.contact {
+    color: #f8f8f8;
+}
+
+.contact p {
+    font-size: 0.8rem;
+}
+
+.company {
+    width: 250px;
+}
+
+.company h5 {
+    color: #5e9f9a;
+    font-size: 1rem;
+}
+
+.company li {
+    list-style-type: none;
+    padding-top: 0.5rem;
+}
+
+.phone {
+    font-size: 1rem;
+}
+
+.mail {
+    font-size: 1rem;
+}
+
+.company li a {
+    color: #f8f8f8;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.community h5 {
+    color: #5e9f9a;
+    font-size: 1rem;
+}
+
+.community li {
+    list-style-type: none;
+    padding-top: 0.5rem;
+}
+
+.community li a {
+    color: #F8F8F8;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.from-blog {
+    margin-left: auto;
+}
+
+.from-blog h5 {
+    color: #F8F8F8;
+    font-size: 1rem;
+}
+
+.from-the {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.footer-placeholder {
+    border-radius: 3px;
+    margin-right: auto;
+}
+
+.from-blog .data-p {
+    color: #5e9f9a;
+    font-size: 0.8rem;
+}
+
+.from-blog p {
+    color: #F8F8F8;
+    font-size: 0.8rem;
+    position: relative;
+}
+
+.social {
+    background-color: #6ab3ac;
+    padding: 1rem;
+}
+
+.social ul {
+    display: flex;
+    list-style-type: none;
+    margin-left: auto;
+}
+
+.social i {
+    padding-left: 1rem;
+    color: #f8f8f8;
+}
+
+.watermark {
+    position: absolute;
+    font-size: 0.7rem;
+    color: #f8f8f8;
+    margin-top: -0.3rem;
+}
+
+.community .fas.fa-chevron-right {
+    font-size: 0.5rem;
+}
+
+.company .fas.fa-chevron-right {
+    font-size: 0.5rem;
+}

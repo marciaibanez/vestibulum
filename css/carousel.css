@@ -1,0 +1,75 @@
+.Wallop {
+    position: relative;
+}
+
+.Wallop-button {
+    position: absolute;
+    top: calc(50% - 26px);
+}
+
+.Wallop-buttonPrevious {
+    background-color: #f8665c !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-color: #b8453d !important;
+    padding: 1rem !important;
+}
+
+.Wallop-buttonNext {
+    right: 0;
+    background-color: #f8665c !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-bottom-color: #b8453d !important;
+    padding: 1rem !important;
+}
+
+.fas.fa-chevron-left:first-child {
+    position: relative;
+    right: -6px;
+    font-size: 1.5rem;
+}
+
+.fas.fa-chevron-left:last-child {
+    position: relative;
+    right: 2px;
+    font-size: 1.5rem;
+}
+
+.fas.fa-chevron-right:first-child {
+    position: relative;
+    left: 5px;
+    font-size: 1.5rem;
+}
+
+.fas.fa-chevron-right:last-child {
+    position: relative;
+    left: -3px;
+    font-size: 1.5rem;
+}
+
+.Wallop-background {
+    width: 100%;
+    height: 600px;
+    background: #7f8c8c;
+    text-align: center;
+    padding: 200px 0 0 0;
+    color: #FFF;
+}
+
+.vestibulum {
+    font-size: 3rem;
+    font-weight: 800;
+    display: inline-block;
+    padding: 0 1rem;
+    background: #f8665c;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.maecenas {
+    display: inline-block;
+    background: rgba(0, 0, 0, .6);
+    padding: 1rem;
+    border-radius: 5px;
+}
