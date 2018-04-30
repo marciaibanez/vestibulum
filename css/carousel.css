@@ -8,20 +8,14 @@
 }
 
 .Wallop-buttonPrevious {
-    background-color: #f8665c !important;
     border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
-    border-bottom-color: #b8453d !important;
-    padding: 1rem !important;
 }
 
 .Wallop-buttonNext {
     right: 0;
-    background-color: #f8665c !important;
     border-top-right-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
-    border-bottom-color: #b8453d !important;
-    padding: 1rem !important;
 }
 
 .fas.fa-chevron-left:first-child {

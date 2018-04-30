@@ -20,6 +20,9 @@ nav {
 header {
     background-color: #76c7c0;
     font-size: 1em;
+    background-image: url("../img/menu-pattern.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
 }
 
 .modus {
@@ -34,6 +37,7 @@ header {
 
 .dropdown-menu li {
     background-color: #f77c73;
+    border-bottom: #e8665c;
 }
 
 nav ul {
@@ -59,7 +63,8 @@ nav li:hover {
 
 nav li:active {
     color: #f8f8f8;
-    background-color: #e8665c;
+    background-color: #f77c73;
+    border-bottom-color: #f8665c;
 }
 
 nav a {
@@ -74,6 +79,7 @@ nav a {
 
 .dropdown {
     position: relative;
+    width: 133px;
 }
 
 .dropdown-menu {

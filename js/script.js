@@ -1,3 +1,6 @@
+Chart.defaults.global.legend.display = false;
+Chart.defaults.global.tooltips.enabled = false;
+
 const chartConfig = [{
         id: 'chart1',
         blueValue: 50,
@@ -45,7 +48,6 @@ chartConfig.forEach((config, i) => {
             circumference: 1 * Math.PI,
             cutoutPercentage: 70,
             responsive: true,
-            legend: false,
             title: false,
             animation: {
                 animateRotate: true

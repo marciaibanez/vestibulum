@@ -24,7 +24,7 @@
             </div>
             <nav>
                 <div class="navbar">
-                    <ul>
+                    <ul class="no-list">
                         <li class="nav-item">
                             <a class="nav-link" href="#home">
                                 HOME
@@ -120,11 +120,11 @@
                     </div>
                 </div>
             </div>
-            <button class="Wallop-button Wallop-buttonPrevious button-secondary">
+            <button class="Wallop-button Wallop-buttonPrevious button button-primary">
                 <i class="fas fa-chevron-left"></i>
                 <i class="fas fa-chevron-left"></i>
             </button>
-            <button class="Wallop-button Wallop-buttonNext button-secondary">
+            <button class="Wallop-button Wallop-buttonNext button button-primary">
                 <i class="fas fa-chevron-right"></i>
                 <i class="fas fa-chevron-right"></i>
             </button>
@@ -136,13 +136,13 @@
                     <h2>Some of our top services</h2>
                     <p class="view-more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eos sunt ducimus sed, perferendis
                         dolorem. Mollitia illum atque.</p>
-                    <button class="view-more-button">VIEW MORE</button>
+                    <button class="view-more-button button button-primary">VIEW MORE</button>
                 </div>
             </div>
 
             <!--Cards-->
             <div class="cards flex-container container">
-                <div class="card" id="svgCard">
+                <div class="card">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
                         width="60px" height="60px" viewBox="0 0 475.099 475.099" style="enable-background:new 0 0 475.099 475.099;"
                         xml:space="preserve">
@@ -157,7 +157,7 @@
                         <a href="#" class="button-secondary">read more</a>
                     </div>
                 </div>
-                <div class="card" id="svgCard">
+                <div class="card">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
                         width="60px" height="60px" viewBox="0 0 480.509 480.509" style="enable-background:new 0 0 480.509 480.509;"
                         xml:space="preserve">
@@ -174,7 +174,7 @@
                         <a href="#" class="button-secondary">read more</a>
                     </div>
                 </div>
-                <div class="card" id="svgCard">
+                <div class="card">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
                         width="60px" height="60px" viewBox="0 0 493.353 493.353" style="enable-background:new 0 0 493.353 493.353;"
                         xml:space="preserve">
@@ -192,7 +192,7 @@
                         <a href="#" class="button-secondary">read more</a>
                     </div>
                 </div>
-                <div class="card" id="svgCard">
+                <div class="card">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
                         width="60px" height="60px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
 
@@ -259,7 +259,7 @@
             <div class="container flex-container charts-choose-clients">
                 <div class="choose-us">
                     <h5>Why choose us?</h5>
-                    <ul>
+                    <ul class="no-list">
                         <li>
                             <i class="fas fa-arrow-right"></i> Quisque at massa ipsum</li>
                         <li>
@@ -305,21 +305,25 @@
                 </div>
                 <div class="clients-say">
                     <h5>What Clients say?</h5>
-                    <p class="depo-arrow">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim perspiciatis magni voluptatum non quibusdam.
-                    </p>
-                    <h6>Jhon Doe</h6>
+                    <div class="client-balloon">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim perspiciatis magni voluptatum non quibusdam.
+                        </p>
+                        <div class="arrow-right"></div>
+                        <h6>Jhon Doe</h6>
+                    </div>
+
                 </div>
             </div>
             </div>
             <div class="container happy-clients">
-                <div>
+                <div class="container flex-container happy-clients-container">
                     <h4>Our Happy clients</h4>
                     <hr>
-                    <button class="button-secondary">
+                    <button class="button button-secondary">
                         <i class="fas fa-chevron-left"></i>
                     </button>
-                    <button class="button-secondary">
+                    <button class="button button-secondary">
                         <i class="fas fa-chevron-right"></i>
                     </button>
                 </div>
@@ -353,7 +357,7 @@
 
     </main>
     <footer>
-        <div class="container flex-container">
+        <div class="container flex-container footer-container">
             <div class="brand">
                 <span class="modus">MODUS</span>
                 <span class="versus">versus</span>
@@ -364,7 +368,7 @@
                     <p>Phone:
                         <span class="phone"> 182 2569 5896</span>
                     </p>
-                    <p>E-mail: 
+                    <p>E-mail:
                         <span class="mail"> info@modu.versus</span>
                     </p>
                 </div>
@@ -424,20 +428,16 @@
                 <h5>
                     <span class="from-the">from the</span> BLOG</h5>
                 <img class="footer-placeholder" src="http://via.placeholder.com/50x50">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam temporibus quas itaque harum? Esse ea
-                    commodi, adipisci recusandae, labore, perspiciatis repudiandae ad mollitia dicta laboriosam voluptas
-                    omnis aliquid! Sequi, reprehenderit!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam temporibus quas itaque harum.</p>
                 <p class="data-p">26 May, 2013</p>
                 <img class="footer-placeholder" src="http://via.placeholder.com/50x50">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam temporibus quas itaque harum? Esse ea
-                    commodi, adipisci recusandae, labore, perspiciatis repudiandae ad mollitia dicta laboriosam voluptas
-                    omnis aliquid! Sequi, reprehenderit!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam temporibus quas itaque harum.</p>
                 <p class="data-p">26 May, 2013</p>
             </div>
         </div>
         <div class="social">
             <div class="container flex-container">
-                <ul>
+                <ul class="no-list">
                     <li>
                         <a href="url">
                             <i class="fab fa-facebook-f"></i>

@@ -1,7 +1,22 @@
+footer {
+    background-color: #76c7c0;
+    padding-top: 2rem;
+    background-image: url("../img/bottom-pattern.png");
+    background-repeat: repeat-x;
+    background-position: top;
+}
+
+footer ul {
+    padding-left: 20px;
+}
+
+.brand {
+    flex-basis: 35%;
+}
+
 .brand p {
     font-size: 0.8rem;
     line-height: 1.5rem;
-
 }
 
 .contact {
@@ -13,7 +28,7 @@
 }
 
 .company {
-    width: 250px;
+    flex-basis: 10%;
 }
 
 .company h5 {
@@ -57,7 +72,7 @@
 }
 
 .from-blog {
-    margin-left: auto;
+    flex-basis: 35%;
 }
 
 .from-blog h5 {
@@ -73,6 +88,11 @@
 .footer-placeholder {
     border-radius: 3px;
     margin-right: auto;
+    float: left;
+}
+
+.footer-container {
+    justify-content: space-between;
 }
 
 .from-blog .data-p {
@@ -84,11 +104,13 @@
     color: #F8F8F8;
     font-size: 0.8rem;
     position: relative;
+    margin-left: 4rem;
 }
 
 .social {
     background-color: #6ab3ac;
     padding: 1rem;
+    margin-top: 2rem;
 }
 
 .social ul {
@@ -107,6 +129,10 @@
     font-size: 0.7rem;
     color: #f8f8f8;
     margin-top: -0.3rem;
+}
+
+.community {
+    flex-basis: 10%;
 }
 
 .community .fas.fa-chevron-right {

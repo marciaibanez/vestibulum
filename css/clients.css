@@ -19,10 +19,32 @@
     background-color: #FFF;
     padding: 1rem;
     border-radius: 5px;
-    line-height: 1.5rem; 
+    line-height: 1.5rem;
+    margin: 0;
+    border-bottom-left-radius: 0;
 }
 
 .client-name {
     display: inline;
     font-size: 0.8rem;
+}
+
+.client-balloon {
+    position: relative;
+}
+
+.client-balloon h6 {
+    position: absolute;
+    left: 35px;
+    bottom: -50px;
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 25px solid #FFF;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid transparent;
+    position: absolute;
+    left: 0;
 }

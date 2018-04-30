@@ -1,0 +1,25 @@
+.button {
+    color: #f8f8f8;
+    border-radius: 5px;
+    border: none;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    cursor: pointer;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.button-primary {
+    background-color: #E8665C;
+    border-color:  #b8453d;
+}
+
+.button-secondary {
+    background-color: #62bdbd;
+    border-color:  #5f9995;
+}
+
+.button-secondary:active {
+    background-color: #E8665C;
+    border-color: #b8453d;
+}
