@@ -1,6 +1,7 @@
 .cards {
     margin-top: 3rem;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .cards h4 {
@@ -21,6 +22,7 @@
     padding: 3rem 1rem;
     box-shadow: 0 3px rgba(0, 0, 0, .05);
     fill: #76c7c0;
+    margin-bottom: 3rem;
 }
 
 .card:active svg {
@@ -34,10 +36,5 @@
 .card .button-secondary {
     position: relative;
     top: 55px;
-}
-
-.card .button-secondary:active {
-    color: #f8f8f8;
-    background-color: #e8665c;
-    border-bottom-color: #b8453d;
+    padding: 1rem 4.5rem;
 }

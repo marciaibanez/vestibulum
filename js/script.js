@@ -47,7 +47,6 @@ chartConfig.forEach((config, i) => {
             rotation: 1 * Math.PI,
             circumference: 1 * Math.PI,
             cutoutPercentage: 70,
-            responsive: true,
             title: false,
             animation: {
                 animateRotate: true
@@ -59,6 +58,23 @@ chartConfig.forEach((config, i) => {
 const portfolioButton = document.getElementById("portfolio");
 const portfolioMenu = document.getElementById("portfolioMenu");
 const dropdownMenuArrow = document.getElementById("dropdownMenuArrow");
+const burgerMenu = document.getElementById("burgerMenu");
+const nav = document.getElementById("nav");
+const allButHeader = document.querySelectorAll("body > *:not(header)");
+const wallopEl = document.querySelector('.Wallop');
+
+const slider = new Wallop(wallopEl);
+
+let isBurgerMenuOpened = false;
+burgerMenu.addEventListener("click", () => {
+    if (!isBurgerMenuOpened) {
+        nav.style.display = 'block';
+        isBurgerMenuOpened = true;
+    } else {
+        nav.style.display = 'none';
+        isBurgerMenuOpened = false;
+    }
+});
 
 let isMenuOpened = false;
 portfolioButton.addEventListener("click", () => {
@@ -73,15 +89,24 @@ portfolioButton.addEventListener("click", () => {
     }
 });
 
-const allButHeader = document.querySelectorAll("body > *:not(header)");
-
 allButHeader.forEach((el, i) => {
     el.addEventListener("click", () => {
-        portfolioMenu.style.display = 'none';
-        dropdownMenuArrow.style.display = 'none';
-        isMenuOpened = false;
+        if (window.matchMedia("(max-width: 39.9375em)").matches) {
+            portfolioMenu.style.display = 'none';
+            dropdownMenuArrow.style.display = 'none';
+            isMenuOpened = false;
+            nav.style.display = 'none';
+            isBurgerMenuOpened = false;
+        }
     });
 });
 
-const wallopEl = document.querySelector('.Wallop');
-const slider = new Wallop(wallopEl);
+window.addEventListener('resize', function (event) {
+    if (window.matchMedia("(min-width: 40em)").matches) {
+        nav.style.display = 'flex';
+        isBurgerMenuOpened = true;
+    } else {
+        nav.style.display = 'none';
+        isBurgerMenuOpened = false;
+    }
+});

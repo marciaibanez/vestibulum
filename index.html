@@ -22,7 +22,10 @@
                 <span class="modus">MODUS</span>
                 <span class="versus">versus</span>
             </div>
-            <nav>
+            <div class="burger-menu">
+                <i class="fas fa-bars fa-2x" id="burgerMenu"></i>
+            </div>
+            <nav id="nav">
                 <div class="navbar">
                     <ul class="no-list">
                         <li class="nav-item">
@@ -133,10 +136,14 @@
         <section>
             <div class="container">
                 <div class="top-services">
-                    <h2>Some of our top services</h2>
-                    <p class="view-more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eos sunt ducimus sed, perferendis
-                        dolorem. Mollitia illum atque.</p>
-                    <button class="view-more-button button button-primary">VIEW MORE</button>
+                    <div>
+                        <h2>Some of our top services</h2>
+                        <p class="view-more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eos sunt ducimus sed, perferendis
+                            dolorem. Mollitia illum atque.</p>
+                    </div>
+                    <div class="view-more-button-container">
+                        <a class="view-more-button button button-primary">VIEW MORE</a>
+                    </div>
                 </div>
             </div>
 
@@ -154,7 +161,7 @@
                         <h4 class="card-title">SUSPENDISSE</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <br>
-                        <a href="#" class="button-secondary">read more</a>
+                        <a class="button button-secondary">read more</a>
                     </div>
                 </div>
                 <div class="card">
@@ -171,7 +178,7 @@
                         <h4 class="card-title">MAECENAS</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card' s content.</p>
                         <br>
-                        <a href="#" class="button-secondary">read more</a>
+                        <a class="button button-secondary">read more</a>
                     </div>
                 </div>
                 <div class="card">
@@ -189,7 +196,7 @@
                         <h4 class="card-title">ALIQUAM</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <br>
-                        <a href="#" class="button-secondary">read more</a>
+                        <a class="button button-secondary">read more</a>
                     </div>
                 </div>
                 <div class="card">
@@ -204,7 +211,7 @@
                         <h4 class="card-title">HABITASSE</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <br>
-                        <a href="#" class="button-secondary">read more</a>
+                        <a class="button button-secondary">read more</a>
                     </div>
                 </div>
             </div>
@@ -281,8 +288,7 @@
                     <div class="charts flex-container">
                         <div>
                             <canvas width="100" id="chart1"></canvas>
-                            <div class="chart-number">50
-                            </div>
+                            <div class="chart-number">50</div>
                             <div class="chart-name">SUSPENDISSE</div>
 
                         </div>

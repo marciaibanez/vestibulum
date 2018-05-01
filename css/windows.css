@@ -4,8 +4,6 @@
     display: grid;
     justify-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    position: relative;
-    top: -250px;
 }
 
 .window {
@@ -19,7 +17,7 @@
 }
 
 .windows-container {
-    margin-bottom: -250px;
+    margin-top: -250px;
 }
 
 .window:first-child,

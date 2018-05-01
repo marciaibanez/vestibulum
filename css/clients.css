@@ -21,7 +21,6 @@
     border-radius: 5px;
     line-height: 1.5rem;
     margin: 0;
-    border-bottom-left-radius: 0;
 }
 
 .client-name {
@@ -35,7 +34,7 @@
 
 .client-balloon h6 {
     position: absolute;
-    left: 35px;
+    left: 50px;
     bottom: -50px;
 }
 
@@ -46,5 +45,5 @@
     border-bottom: 25px solid transparent;
     border-left: 25px solid transparent;
     position: absolute;
-    left: 0;
+    left: 15px;
 }
