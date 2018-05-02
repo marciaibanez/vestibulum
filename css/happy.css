@@ -3,7 +3,6 @@
     margin-bottom: 4rem;
 }
 
-
 .fa-arrow-right {
     color: #e8645a;
     font-size: 0.8rem;
@@ -11,7 +10,7 @@
 
 .happy-clients img {
     display: grid;
-    margin-right: 1rem; 
+    margin-right: 1rem;
     margin-bottom: 3rem;
     border-radius: 3px;
 }

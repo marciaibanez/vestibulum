@@ -23,6 +23,20 @@
     .top-services {
         display: block;
     }
+
+    .clients-say {
+        flex-basis: 100%;
+    }
+
+    .footer-container {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 1rem;
+    }
+
+    .Wallop {
+        display: none;
+    }
 }
 
 /* Medium and up */
