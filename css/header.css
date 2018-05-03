@@ -27,10 +27,6 @@ header {
     cursor: pointer;
 }
 
-nav {
-    display: none;
-}
-
 nav ul {
     list-style-type: none;
     display: flex;

@@ -56,7 +56,7 @@
         padding: 0 1rem;
     }
     .choose-us {
-        flex-basis: 162px;
+        flex-basis: 182px;
         margin-bottom: 2rem;
     }
     .charts-size {
@@ -68,12 +68,17 @@
     .chart-canvas {
         flex-basis: 50%;
     }
-    .charts canvas {
+    .chart canvas {
         margin: 0 auto;
         width: 100px !important;
         height: 55px !important;
     }
-}
+    .happy-clients {
+        margin: 0 1rem;
+    }
+    .vestibulum {
+        font-size: 2.5rem;
+    }
     /* Medium and up */
     @media screen and (min-width: 40em) {
         .burger-menu {
@@ -98,5 +103,3 @@
             margin-bottom: 0;
         }
     }
-    /* Large only */
-    @media screen and (min-width: 64em) and (max-width: 74.9375em) {}

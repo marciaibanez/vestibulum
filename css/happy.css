@@ -1,6 +1,15 @@
 .happy-clients-container {
-    margin-top: 6rem;
-    margin-bottom: 4rem;
+    margin-top: 3rem;
+}
+
+.happy-clients {
+    position: relative;
+}
+
+.happy-buttons {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .fa-arrow-right {
@@ -9,25 +18,26 @@
 }
 
 .happy-clients img {
-   max-width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
 }
 
 .happy-clients h4 {
     font-size: 1rem;
     color: #687272;
     font-weight: 700;
-    flex-basis: 200px;
+    flex-basis: 250px;
     margin: .7rem 0;
 }
 
-.happy-clients .button-secondary {
+.happy-clients .button-primary {
     background-color: #9aa4a4;
     border-bottom-color: #687272;
     padding: .5rem .8rem;
     margin-left: 1rem;
 }
 
-.happy-clients .button-secondary:active {
+.happy-clients .button-primary:active {
     background-color: #e8645a;
     border-bottom-color: #b8453d;
 }
@@ -44,5 +54,5 @@ hr {
     border: 0;
     border-bottom: 1px solid #dee0e0;
     width: 100%;
-    margin: 1.3rem 0;
+    margin: 1.3rem 9rem 0 0;
 }

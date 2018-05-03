@@ -73,8 +73,23 @@ slider.mount()
 
 const slider2 = new Glide('.glide-img', {
     type: 'carousel',
-    perView: 2,
+    perView: 6,
     focusAt: 'center',
+    breakpoints: {
+        1000: {
+            perView: 5
+        },
+        800: {
+            perView: 4
+        },
+        600: {
+            perView: 3
+        },
+        400: {
+            perView: 2
+        }
+
+    }
 });
 
 slider2.mount()

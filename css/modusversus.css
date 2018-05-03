@@ -5,7 +5,7 @@
     background-image: url("../img/rule-pattern.png");
     background-repeat: repeat-x;
     background-position: top;
-    padding: 1rem 1rem 13rem 1rem;
+    padding: 2rem;
 }
 
 .modus-versus h1 {
@@ -17,4 +17,5 @@
 .modus-versus p {
     font-size: 0.8rem;
     color: #687272;
+    margin: 0 1rem;
 }
