@@ -1,18 +1,35 @@
-.Wallop {
-    position: relative;
+.glide {
+    margin-top: -16px;
 }
 
-.Wallop-button {
+.slider__bullets {
+    bottom: 0;
+}
+
+.glide__bullet--active {
+    background-color: #f8665c !important;
+}
+
+.slider__bullet {
+    background: #7f8c8c;
+    border: 0;
+    width: 50px;
+    height: 4px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.slider-button {
     position: absolute;
     top: calc(50% - 26px);
 }
 
-.Wallop-buttonPrevious {
+.slider-button:first-child {
     border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
 }
 
-.Wallop-buttonNext {
+.slider-button:last-child {
     right: 0;
     border-top-right-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
@@ -42,7 +59,7 @@
     font-size: 1.5rem;
 }
 
-.Wallop-background {
+.slider-background {
     width: 100%;
     height: 600px;
     background: #7f8c8c;

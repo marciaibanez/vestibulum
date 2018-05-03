@@ -10,11 +10,12 @@ footer ul {
     padding-left: 20px;
 }
 
-.brand {
+.brand-footer {
+    color: #f8f8f8;
     flex-basis: 35%;
 }
 
-.brand p {
+.brand-footer p {
     font-size: 0.8rem;
     line-height: 1.5rem;
 }

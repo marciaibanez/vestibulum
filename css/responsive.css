@@ -19,57 +19,84 @@
     .brand {
         margin-left: 1rem;
     }
-
+    .slider-background {
+        padding: 200px 1rem 0 1rem;
+    }
+    .slider-button {
+        display: none;
+    }
     .top-services {
         display: block;
     }
-
     .clients-say {
         flex-basis: 100%;
     }
-
     .footer-container {
         justify-content: space-between;
         flex-wrap: wrap;
         margin: 1rem;
     }
-
-    .Wallop {
-        display: none;
+    .brand-footer {
+        flex-basis: 100%;
     }
-}
-
-/* Medium and up */
-
-@media screen and (min-width: 40em) {
-    .burger-menu {
-        display: none;
+    .from-blog {
+        flex-basis: 100%;
     }
-    nav {
-        display: flex;
+    .company-community {
+        flex-basis: 100%;
+        justify-content: space-around;
     }
-}
-
-/* Medium only */
-
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-    nav ul {
+    .company,
+    .community {
+        flex-basis: 101px;
+    }
+    .charts-choose-clients {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 1rem;
+    }
+    .choose-us {
+        flex-basis: 162px;
+        margin-bottom: 2rem;
+    }
+    .charts-size {
+        flex-basis: 100%;
+    }
+    .charts {
         flex-wrap: wrap;
     }
-}
-
-/* Large and up */
-
-@media screen and (min-width: 64em) {
-    .cards {
-        justify-content: space-between;
+    .chart-canvas {
+        flex-basis: 50%;
     }
-
-    .card {
-        margin-bottom: 0;
+    .charts canvas {
+        margin: 0 auto;
+        width: 100px !important;
+        height: 55px !important;
     }
 }
-
-/* Large only */
-
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+    /* Medium and up */
+    @media screen and (min-width: 40em) {
+        .burger-menu {
+            display: none;
+        }
+        nav {
+            display: flex;
+        }
+    }
+    /* Medium only */
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+        nav ul {
+            flex-wrap: wrap;
+        }
+    }
+    /* Large and up */
+    @media screen and (min-width: 64em) {
+        .cards {
+            justify-content: space-between;
+        }
+        .card {
+            margin-bottom: 0;
+        }
+    }
+    /* Large only */
+    @media screen and (min-width: 64em) and (max-width: 74.9375em) {}

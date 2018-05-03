@@ -9,10 +9,7 @@
 }
 
 .happy-clients img {
-    display: grid;
-    margin-right: 1rem;
-    margin-bottom: 3rem;
-    border-radius: 3px;
+   max-width: 100%;
 }
 
 .happy-clients h4 {

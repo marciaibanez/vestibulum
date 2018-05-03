@@ -15,6 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "wallop": "^2.4.1"
+    "wallop": "^2.4.1",
+    "glidejs": "^3.0.3"
   }
 }

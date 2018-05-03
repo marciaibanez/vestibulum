@@ -61,9 +61,23 @@ const dropdownMenuArrow = document.getElementById("dropdownMenuArrow");
 const burgerMenu = document.getElementById("burgerMenu");
 const nav = document.getElementById("nav");
 const allButHeader = document.querySelectorAll("body > *:not(header)");
-const wallopEl = document.querySelector('.Wallop');
 
-const slider = new Wallop(wallopEl);
+const slider = new Glide('.glide', {
+    type: 'carousel',
+    perView: 1,
+    focusAt: 'center',
+    gap: 0
+});
+
+slider.mount()
+
+const slider2 = new Glide('.glide-img', {
+    type: 'carousel',
+    perView: 2,
+    focusAt: 'center',
+});
+
+slider2.mount()
 
 let isBurgerMenuOpened = false;
 burgerMenu.addEventListener("click", () => {

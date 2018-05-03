@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
-    <link rel="stylesheet" href="bower_components/wallop/css/wallop.css">
-    <link rel="stylesheet" href="bower_components/wallop/css/wallop--slide.css">
+    <link rel="stylesheet" href="bower_components/glidejs/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="bower_components/glidejs/dist/css/glide.theme.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Vestibulum</title>
 </head>
@@ -92,45 +92,53 @@
     <!--Carousel-->
 
     <main>
-
-        <div class="Wallop Wallop--slide">
-            <div class="Wallop-list">
-                <div class="Wallop-item">
-                    <div class="Wallop-background">
-                        <div>
-                            <h1 class="vestibulum">VESTIBULUM</h1>
-                            <br>
-                            <div class="maecenas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, temporibus.</div>
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <div class="slider-background">
+                            <div>
+                                <h1 class="vestibulum">VESTIBULUM</h1>
+                                <br>
+                                <div class="maecenas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, temporibus.</div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="Wallop-item">
-                    <div class="Wallop-background">
-                        <div>
-                            <h1 class="vestibulum">VESTIBULUM</h1>
-                            <br>
-                            <div class="maecenas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, temporibus.</div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="slider-background">
+                            <div>
+                                <h1 class="vestibulum">VESTIBULUM</h1>
+                                <br>
+                                <div class="maecenas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, temporibus.</div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="Wallop-item">
-                    <div class="Wallop-background">
-                        <div>
-                            <h1 class="vestibulum">VESTIBULUM</h1>
-                            <br>
-                            <div class="maecenas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, temporibus.</div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="slider-background">
+                            <div>
+                                <h1 class="vestibulum">VESTIBULUM</h1>
+                                <br>
+                                <div class="maecenas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, temporibus.</div>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
-            <button class="Wallop-button Wallop-buttonPrevious button button-primary">
-                <i class="fas fa-chevron-left"></i>
-                <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="Wallop-button Wallop-buttonNext button button-primary">
-                <i class="fas fa-chevron-right"></i>
-                <i class="fas fa-chevron-right"></i>
-            </button>
+            <div data-glide-el="controls">
+                <button class="slider-button button button-primary" data-glide-dir="<">
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-button button button-primary" data-glide-dir=">">
+                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div data-glide-el="controls[nav]" class="slider__bullets glide__bullets">
+                <button data-glide-dir="=0" class="slider__bullet"></button>
+                <button data-glide-dir="=1" class="slider__bullet"></button>
+                <button data-glide-dir="=2" class="slider__bullet"></button>
+            </div>
         </div>
 
         <section>
@@ -286,24 +294,24 @@
                         <a href="url">quia eos laboriosam.</a>
                     </p>
                     <div class="charts flex-container">
-                        <div>
-                            <canvas width="100" id="chart1"></canvas>
+                        <div class="chart-canvas">
+                            <canvas id="chart1"></canvas>
                             <div class="chart-number">50</div>
                             <div class="chart-name">SUSPENDISSE</div>
 
                         </div>
-                        <div>
-                            <canvas width="100" id="chart2"></canvas>
+                        <div class="chart-canvas">
+                            <canvas id="chart2"></canvas>
                             <div class="chart-number">70</div>
                             <div class="chart-name">MAECENAS</div>
                         </div>
-                        <div>
-                            <canvas width="100" id="chart3"></canvas>
+                        <div class="chart-canvas">
+                            <canvas id="chart3"></canvas>
                             <div class="chart-number">80</div>
                             <div class="chart-name">ALIQUAM</div>
                         </div>
-                        <div>
-                            <canvas width="100" id="chart4"></canvas>
+                        <div class="chart-canvas">
+                            <canvas id="chart4"></canvas>
                             <div class="chart-number">100</div>
                             <div class="chart-name">HABITASSE</div>
                         </div>
@@ -334,29 +342,30 @@
                     </button>
                 </div>
 
-                <div class="flex-container">
-                    <div>
-                        <img src="http://via.placeholder.com/200x100">
-                    </div>
-
-                    <div>
-                        <img src="http://via.placeholder.com/200x100">
-                    </div>
-
-                    <div>
-                        <img src="http://via.placeholder.com/200x100">
-                    </div>
-
-                    <div>
-                        <img src="http://via.placeholder.com/200x100">
-                    </div>
-
-                    <div>
-                        <img src="http://via.placeholder.com/200x100">
-                    </div>
-
-                    <div>
-                        <img src="http://via.placeholder.com/200x100">
+                <div class="glide-img">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div>
+                                    <img src="http://via.placeholder.com/200x100">
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <img src="http://via.placeholder.com/200x100">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="http://via.placeholder.com/200x100">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="http://via.placeholder.com/200x100">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="http://via.placeholder.com/200x100">
+                            </li>
+                            <li class="glide__slide">
+                                <img src="http://via.placeholder.com/200x100">
+                            </li>
+                        </ul>
                     </div>
                 </div>
         </section>
@@ -364,7 +373,7 @@
     </main>
     <footer>
         <div class="container flex-container footer-container">
-            <div class="brand">
+            <div class="brand-footer">
                 <span class="modus">MODUS</span>
                 <span class="versus">versus</span>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum accusantium, veritatis, ipsa minima incidunt
@@ -379,56 +388,57 @@
                     </p>
                 </div>
             </div>
-
-            <div class="company">
-                <h5>Company</h5>
-                <ul>
-                    <li>
-                        <a href="url">
-                            <i class="fas fa-chevron-right"></i> About</a>
-                    </li>
-                    <li>
-                        <a href="url">
-                            <i class="fas fa-chevron-right"></i> FAQ</a>
-                    </li>
-                    <li>
-                        <a href="url">
-                            <i class="fas fa-chevron-right"></i> Contact</a>
-                    </li>
-                    <li>
-                        <a href="url">
-                            <i class="fas fa-chevron-right"></i> Terms</a>
-                    </li>
-                    <li>
-                        <a href="url">
-                            <i class="fas fa-chevron-right"></i> Privacy</a>
-                    </li>
-                    <li>
-                        <a href="url">
-                            <i class="fas fa-chevron-right"></i> Testmonials</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="community">
-                <h5>Community</h5>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-chevron-right"></i> Blog</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-chevron-right"></i> Forum</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-chevron-right"></i> Suport</a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-chevron-right"></i> Newsletter</a>
-                    </li>
-                </ul>
+            <div class="flex-container company-community">
+                <div class="company">
+                    <h5>Company</h5>
+                    <ul>
+                        <li>
+                            <a href="url">
+                                <i class="fas fa-chevron-right"></i> About</a>
+                        </li>
+                        <li>
+                            <a href="url">
+                                <i class="fas fa-chevron-right"></i> FAQ</a>
+                        </li>
+                        <li>
+                            <a href="url">
+                                <i class="fas fa-chevron-right"></i> Contact</a>
+                        </li>
+                        <li>
+                            <a href="url">
+                                <i class="fas fa-chevron-right"></i> Terms</a>
+                        </li>
+                        <li>
+                            <a href="url">
+                                <i class="fas fa-chevron-right"></i> Privacy</a>
+                        </li>
+                        <li>
+                            <a href="url">
+                                <i class="fas fa-chevron-right"></i> Testmonials</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="community">
+                    <h5>Community</h5>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-chevron-right"></i> Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-chevron-right"></i> Forum</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-chevron-right"></i> Suport</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-chevron-right"></i> Newsletter</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="from-blog">
                 <h5>
@@ -472,7 +482,7 @@
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-    <script src="bower_components/wallop/js/Wallop.min.js"></script>
+    <script src="bower_components/glidejs/dist/glide.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 
