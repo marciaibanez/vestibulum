@@ -1,60 +1,3 @@
-Chart.defaults.global.legend.display = false;
-Chart.defaults.global.tooltips.enabled = false;
-
-const chartConfig = [{
-        id: 'chart1',
-        blueValue: 50,
-        redValue: 50
-    },
-    {
-        id: 'chart2',
-        blueValue: 70,
-        redValue: 30
-    },
-    {
-        id: 'chart3',
-        blueValue: 80,
-        redValue: 20
-    },
-    {
-        id: 'chart4',
-        blueValue: 100,
-        redValue: 0
-    }
-];
-
-chartConfig.forEach((config, i) => {
-    new Chart(document.getElementById(config.id).getContext("2d"), {
-        type: 'doughnut',
-        data: {
-            datasets: [{
-                data: [
-                    config.blueValue,
-                    config.redValue
-                ],
-                backgroundColor: [
-                    '#e8665c',
-                    '#6ab3ac'
-                ],
-                hoverBackgroundColor: [
-                    '#e8665c',
-                    '#6ab3ac'
-                ],
-                borderWidth: [0, 0]
-            }],
-        },
-        options: {
-            rotation: 1 * Math.PI,
-            circumference: 1 * Math.PI,
-            cutoutPercentage: 70,
-            title: false,
-            animation: {
-                animateRotate: true
-            }
-        }
-    });
-});
-
 const portfolioButton = document.getElementById("portfolio");
 const portfolioMenu = document.getElementById("portfolioMenu");
 const dropdownMenuArrow = document.getElementById("dropdownMenuArrow");
@@ -95,26 +38,36 @@ const slider2 = new Glide('.glide-img', {
 slider2.mount()
 
 let isBurgerMenuOpened = false;
+
+if (window.matchMedia("(min-width: 40em)").matches) {
+    nav.style.display = 'flex';
+    isBurgerMenuOpened = true;
+} else {
+    nav.style.display = 'none';
+    isBurgerMenuOpened = false;
+}
+
+
 burgerMenu.addEventListener("click", () => {
-    if (!isBurgerMenuOpened) {
-        nav.style.display = 'block';
-        isBurgerMenuOpened = true;
-    } else {
+    if (isBurgerMenuOpened) {
         nav.style.display = 'none';
         isBurgerMenuOpened = false;
+    } else {
+        nav.style.display = 'block';
+        isBurgerMenuOpened = true;
     }
 });
 
 let isMenuOpened = false;
 portfolioButton.addEventListener("click", () => {
-    if (!isMenuOpened) {
-        portfolioMenu.style.display = 'block';
-        dropdownMenuArrow.style.display = 'block';
-        isMenuOpened = true;
-    } else {
+    if (isMenuOpened) {
         portfolioMenu.style.display = 'none';
         dropdownMenuArrow.style.display = 'none';
         isMenuOpened = false;
+    } else {
+        portfolioMenu.style.display = 'block';
+        dropdownMenuArrow.style.display = 'block';
+        isMenuOpened = true;
     }
 });
 

@@ -26,15 +26,16 @@
     font-size: 1rem;
     color: #687272;
     font-weight: 700;
-    flex-basis: 250px;
+    flex-basis: 350px;
     margin: .7rem 0;
+
 }
 
 .happy-clients .button-primary {
     background-color: #9aa4a4;
     border-bottom-color: #687272;
     padding: .5rem .8rem;
-    margin-left: 1rem;
+    margin-left: .5rem;
 }
 
 .happy-clients .button-primary:active {
@@ -54,5 +55,5 @@ hr {
     border: 0;
     border-bottom: 1px solid #dee0e0;
     width: 100%;
-    margin: 1.3rem 9rem 0 0;
+    margin: 1.3rem 7rem 0 0;
 }

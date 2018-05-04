@@ -30,6 +30,8 @@
     }
     .clients-say {
         flex-basis: 100%;
+        padding: 0 1rem;
+        margin-top: 4rem;
     }
     .footer-container {
         justify-content: space-between;
@@ -59,19 +61,20 @@
         flex-basis: 182px;
         margin-bottom: 2rem;
     }
-    .charts-size {
-        flex-basis: 100%;
-    }
     .charts {
         flex-wrap: wrap;
     }
-    .chart-canvas {
+    .chart-svg {
         flex-basis: 50%;
+        margin-bottom: 1rem;
     }
-    .chart canvas {
-        margin: 0 auto;
-        width: 100px !important;
-        height: 55px !important;
+    .chart-number {
+        font-size: 1rem;
+        top: -1.5rem;
+    }
+    .chart-name {
+        font-size: .7rem;
+        top: -1rem;
     }
     .happy-clients {
         margin: 0 1rem;
@@ -79,27 +82,44 @@
     .vestibulum {
         font-size: 2.5rem;
     }
-    /* Medium and up */
-    @media screen and (min-width: 40em) {
-        .burger-menu {
-            display: none;
-        }
-        nav {
-            display: flex;
-        }
+}
+/* Medium and up */
+@media screen and (min-width: 40em) {
+    .burger-menu {
+        display: none;
     }
-    /* Medium only */
-    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-        nav ul {
-            flex-wrap: wrap;
-        }
+    nav {
+        display: flex;
     }
-    /* Large and up */
-    @media screen and (min-width: 64em) {
-        .cards {
-            justify-content: space-between;
-        }
-        .card {
-            margin-bottom: 0;
-        }
+
+}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    nav ul {
+        flex-wrap: wrap;
     }
+
+    .chart-svg {
+        flex-basis: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .chart-number {
+        font-size: .8rem;
+        top: -1.4rem;
+    }
+
+    .chart-name {
+        font-size: .7rem;
+        top: -1rem;
+    }
+}
+/* Large and up */
+@media screen and (min-width: 64em) {
+    .cards {
+        justify-content: space-between;
+    }
+    .card {
+        margin-bottom: 0;
+    }
+}
