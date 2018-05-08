@@ -1,0 +1,29 @@
+{
+  "name": "vestibulum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marciaibanez/vestibullum.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marciaibanez/vestibullum/issues"
+  },
+  "homepage": "https://github.com/marciaibanez/vestibullum#readme",
+  "dependencies": {
+    "@glidejs/glide": "^3.0.3",
+    "base.css": "^1.0.0",
+    "parcel-bundler": "^1.8.1"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "node-sass": "^4.9.0"
+  }
+}

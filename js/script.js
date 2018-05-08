@@ -1,3 +1,4 @@
+import Glide from '@glidejs/glide';
 const portfolioButton = document.getElementById("portfolio");
 const portfolioMenu = document.getElementById("portfolioMenu");
 const dropdownMenuArrow = document.getElementById("dropdownMenuArrow");
@@ -35,60 +36,78 @@ const slider2 = new Glide('.glide-img', {
     }
 });
 
-slider2.mount()
+slider2.mount();
 
 let isBurgerMenuOpened = false;
+let isMenuOpened = false;
 
-if (window.matchMedia("(min-width: 40em)").matches) {
+const showBurgerMenu = () => {
     nav.style.display = 'flex';
     isBurgerMenuOpened = true;
-} else {
+}
+
+const closeBurgerMenu = () => {
     nav.style.display = 'none';
     isBurgerMenuOpened = false;
+}
+
+const showPortfolioMenu = () => {
+    portfolioMenu.style.display = 'block';
+    dropdownMenuArrow.style.display = 'block';
+    isMenuOpened = true;
+}
+
+const closePortfolioMenu = () => {
+    portfolioMenu.style.display = 'none';
+    dropdownMenuArrow.style.display = 'none';
+    isMenuOpened = false;
+}
+
+const isMediumUp = () => {
+    return window.matchMedia("(min-width: 40em)").matches;
+}
+
+const isSmallOnly = () => {
+    return window.matchMedia("(max-width: 39.9375em)").matches;
+}
+
+if (isMediumUp()) {
+    showBurgerMenu();
+} else {
+    closeBurgerMenu();
 }
 
 
 burgerMenu.addEventListener("click", () => {
     if (isBurgerMenuOpened) {
-        nav.style.display = 'none';
-        isBurgerMenuOpened = false;
+        closeBurgerMenu();
     } else {
-        nav.style.display = 'block';
-        isBurgerMenuOpened = true;
+        showBurgerMenu();
     }
 });
 
-let isMenuOpened = false;
+
 portfolioButton.addEventListener("click", () => {
     if (isMenuOpened) {
-        portfolioMenu.style.display = 'none';
-        dropdownMenuArrow.style.display = 'none';
-        isMenuOpened = false;
+        closePortfolioMenu();
     } else {
-        portfolioMenu.style.display = 'block';
-        dropdownMenuArrow.style.display = 'block';
-        isMenuOpened = true;
+        openPortfolioMenu();
     }
 });
 
 allButHeader.forEach((el, i) => {
     el.addEventListener("click", () => {
-        if (window.matchMedia("(max-width: 39.9375em)").matches) {
-            portfolioMenu.style.display = 'none';
-            dropdownMenuArrow.style.display = 'none';
-            isMenuOpened = false;
-            nav.style.display = 'none';
-            isBurgerMenuOpened = false;
+        if (isSmallOnly()) {
+            closePortfolioMenu();
+            closeBurgerMenu();
         }
     });
 });
 
 window.addEventListener('resize', function (event) {
-    if (window.matchMedia("(min-width: 40em)").matches) {
-        nav.style.display = 'flex';
-        isBurgerMenuOpened = true;
+    if (isMediumUp()) {
+        showBurgerMenu();
     } else {
-        nav.style.display = 'none';
-        isBurgerMenuOpened = false;
+        closeBurgerMenu();
     }
 });
