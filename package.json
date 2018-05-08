@@ -19,10 +19,10 @@
   },
   "homepage": "https://github.com/marciaibanez/vestibulum#readme",
   "dependencies": {
-    "@glidejs/glide": "^3.0.3",
-    "parcel-bundler": "^1.8.1"
+    "@glidejs/glide": "^3.0.3"
   },
   "devDependencies": {
+    "parcel-bundler": "^1.8.1",
     "babel-preset-env": "^1.6.1",
     "node-sass": "^4.9.0"
   }
