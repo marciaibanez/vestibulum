@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\"",
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build --public-url ./vestibulum/ index.html"
   },
   "repository": {
     "type": "git",
