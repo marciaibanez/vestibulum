@@ -41,7 +41,7 @@ slider2.mount();
 let isBurgerMenuOpened = false;
 let isMenuOpened = false;
 
-const showBurgerMenu = () => {
+const openBurgerMenu = () => {
     nav.style.display = 'flex';
     isBurgerMenuOpened = true;
 }
@@ -51,7 +51,7 @@ const closeBurgerMenu = () => {
     isBurgerMenuOpened = false;
 }
 
-const showPortfolioMenu = () => {
+const openPortfolioMenu = () => {
     portfolioMenu.style.display = 'block';
     dropdownMenuArrow.style.display = 'block';
     isMenuOpened = true;
@@ -72,7 +72,7 @@ const isSmallOnly = () => {
 }
 
 if (isMediumUp()) {
-    showBurgerMenu();
+    openBurgerMenu();
 } else {
     closeBurgerMenu();
 }
@@ -82,7 +82,7 @@ burgerMenu.addEventListener("click", () => {
     if (isBurgerMenuOpened) {
         closeBurgerMenu();
     } else {
-        showBurgerMenu();
+        openBurgerMenu();
     }
 });
 
@@ -106,7 +106,7 @@ allButHeader.forEach((el, i) => {
 
 window.addEventListener('resize', function (event) {
     if (isMediumUp()) {
-        showBurgerMenu();
+        openBurgerMenu();
     } else {
         closeBurgerMenu();
     }
