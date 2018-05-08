@@ -9,17 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marciaibanez/vestibullum.git"
+    "url": "git+https://github.com/marciaibanez/vestibulum.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/marciaibanez/vestibullum/issues"
+    "url": "https://github.com/marciaibanez/vestibulum/issues"
   },
-  "homepage": "https://github.com/marciaibanez/vestibullum#readme",
+  "homepage": "https://github.com/marciaibanez/vestibulum#readme",
   "dependencies": {
     "@glidejs/glide": "^3.0.3",
-    "base.css": "^1.0.0",
     "parcel-bundler": "^1.8.1"
   },
   "devDependencies": {
