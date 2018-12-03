@@ -1,0 +1,69 @@
+.c-button {
+  background: #bdc3c7;
+  border-radius: 5px;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.45;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  transition: background 150ms;
+
+  @include on-event {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    background: lighten(#bdc3c7, 5%);
+  }
+
+  &--black {
+    background: #111;
+    @include on-event {
+      background: lighten(#111, 5%);
+    }
+  }
+
+  &--red {
+    background: #e74c3c;
+    @include on-event {
+      background: lighten(#e74c3c, 5%);
+    }
+  }
+
+  &--green {
+    background: #2ecc71;
+    @include on-event {
+      background: lighten(#2ecc71, 5%);
+    }
+  }
+
+  &--blue {
+    background: $brand-color;
+    @include on-event {
+      background: lighten($brand-color, 5%);
+    }
+  }
+
+  &--orange {
+    background: #e67e22;
+    @include on-event {
+      background: lighten(#e67e22, 5%);
+    }
+  }
+
+  &--yellow {
+    background: #f1c40f;
+    @include on-event {
+      background: lighten(#f1c40f, 5%);
+    }
+  }
+
+  &--purple {
+    background: #9b59b6;
+    @include on-event {
+      background: lighten(#9b59b6, 5%);
+    }
+  }
+}

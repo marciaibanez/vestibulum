@@ -1,0 +1,124 @@
+/* Small only */
+
+@media screen and (max-width: 39.9375em) {
+  nav {
+    position: relative;
+  }
+  nav ul {
+    position: absolute;
+    right: 0;
+    top: 61px;
+    z-index: 1;
+    display: block;
+    background-color: #76c7c0;
+    text-align: center;
+  }
+  nav li {
+    margin: 0.5rem;
+  }
+  .brand {
+    margin-left: 1rem;
+  }
+  .slider-background {
+    padding: 200px 1rem 0 1rem;
+  }
+  .slider-button {
+    display: none;
+  }
+  .top-services {
+    display: block;
+  }
+  .clients-say {
+    flex-basis: 100%;
+    padding: 0 1rem;
+    margin-top: 4rem;
+  }
+  .footer-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 1rem;
+  }
+  .brand-footer {
+    flex-basis: 100%;
+  }
+  .from-blog {
+    flex-basis: 100%;
+  }
+  .company-community {
+    flex-basis: 100%;
+    justify-content: space-around;
+  }
+  .company,
+  .community {
+    flex-basis: 101px;
+  }
+  .charts-choose-clients {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 1rem;
+  }
+  .choose-us {
+    flex-basis: 182px;
+    margin-bottom: 2rem;
+  }
+  .charts {
+    flex-wrap: wrap;
+  }
+  .chart-svg {
+    flex-basis: 50%;
+    margin-bottom: 1rem;
+  }
+  .chart-number {
+    font-size: 1rem;
+    top: -1.5rem;
+  }
+  .chart-name {
+    font-size: 0.7rem;
+    top: -1rem;
+  }
+  .happy-clients {
+    margin: 0 1rem;
+  }
+  .vestibulum {
+    font-size: 2.5rem;
+  }
+}
+/* Medium and up */
+@media screen and (min-width: 40em) {
+  .burger-menu {
+    display: none;
+  }
+  nav {
+    display: flex;
+  }
+}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  .chart-svg {
+    flex-basis: 50%;
+    margin-bottom: 1rem;
+  }
+
+  .chart-number {
+    font-size: 0.8rem;
+    top: -1.4rem;
+  }
+
+  .chart-name {
+    font-size: 0.7rem;
+    top: -1rem;
+  }
+}
+/* Large and up */
+@media screen and (min-width: 64em) {
+  .cards {
+    justify-content: space-between;
+  }
+  .card {
+    margin-bottom: 0;
+  }
+}

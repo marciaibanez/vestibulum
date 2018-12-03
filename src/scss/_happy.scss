@@ -1,0 +1,58 @@
+.happy-clients-container {
+  margin-top: 3rem;
+}
+
+.happy-clients {
+  position: relative;
+}
+
+.happy-buttons {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-arrow-right {
+  color: #e8645a;
+  font-size: 0.8rem;
+}
+
+.happy-clients img {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.happy-clients h4 {
+  font-size: 1rem;
+  color: #687272;
+  font-weight: 700;
+  flex-basis: 350px;
+  margin: 0.7rem 0;
+}
+
+.happy-clients .button-primary {
+  background-color: #9aa4a4;
+  border-bottom-color: #687272;
+  padding: 0.5rem 0.8rem;
+  margin-left: 0.5rem;
+}
+
+.happy-clients .button-primary:active {
+  background-color: #e8645a;
+  border-bottom-color: #b8453d;
+}
+
+.happy-clients .button-secondary .fas.fa-chevron-left {
+  font-size: 1.5rem;
+}
+
+.happy-clients .button-secondary .fas.fa-chevron-right {
+  font-size: 1.5rem;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #dee0e0;
+  width: 100%;
+  margin: 1.3rem 7rem 0 0;
+}

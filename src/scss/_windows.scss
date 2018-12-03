@@ -1,0 +1,84 @@
+.windows-container {
+  background-color: #ececec;
+  margin-bottom: 10vw;
+  margin-top: -7vw;
+}
+
+.your-image {
+  font-size: 2em;
+  color: #f8f8f8;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 3em;
+}
+
+.windows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7vw;
+  position: relative;
+  top: 8vw;
+}
+
+.window {
+  background: #d8d6d9;
+  width: 40em;
+  height: 22.5em;
+  border-radius: 0.375em;
+  border: 1px solid #ccc;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.window:first-child,
+.window:last-child {
+  width: 32em;
+  height: 18em;
+  z-index: 1;
+}
+
+.window:first-child {
+  margin-right: -5em;
+}
+
+.window:last-child {
+  margin-left: -5em;
+}
+
+.window-body {
+  border: 0.1875em solid #d8d6d9;
+  box-sizing: border-box;
+  width: 100%;
+  height: 90%;
+  background-color: #7f8c8c;
+}
+
+.window-header {
+  padding: 0.5em 0.6em;
+}
+
+.window-ball {
+  width: 0.625em;
+  height: 0.625em;
+  border-radius: 100%;
+  background: #fff;
+  display: inline-block;
+}
+
+.window-minimize {
+  float: right;
+  background: #fff;
+  border-radius: 0.125em;
+  width: 0.75em;
+  height: 0.375em;
+  margin: 0.3em;
+}
+
+.window:first-child .window-body {
+  background-color: #76c7c0;
+}
+
+.window:last-child .window-body {
+  background-color: #76c7c0;
+}

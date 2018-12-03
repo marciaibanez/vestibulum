@@ -1,0 +1,34 @@
+.charts {
+  text-align: center;
+  justify-content: center;
+}
+
+.charts p {
+  font-size: 0.8rem;
+  color: #687272;
+}
+
+.charts p a {
+  color: #e8665c;
+}
+
+.chart-number {
+  font-size: 1.5rem;
+  font-weight: 800;
+  position: relative;
+  top: -2rem;
+  color: #7f8c8c;
+}
+
+.chart-name {
+  font-size: 1.1rem;
+  font-weight: 800;
+  position: relative;
+  top: -1.5rem;
+  color: #7f8c8c;
+}
+
+.donut {
+  width: 60%;
+  height: 90%;
+}

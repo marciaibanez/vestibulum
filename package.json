@@ -1,29 +1,70 @@
 {
-  "name": "vestibulum",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "name": "bass",
+  "version": "0.0.1",
   "scripts": {
-    "test": "echo \"Error: no test specified\"",
-    "start": "parcel index.html",
-    "build": "parcel build --public-url ./ index.html"
+    "format": "prettier --single-quote --write \"**/*.{js,json,scss,md}\"",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --env.production",
+    "dev": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules --env.development"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/marciaibanez/vestibulum.git"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/marciaibanez/vestibulum/issues"
+  "lint-staged": {
+    "*.js": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
   },
-  "homepage": "https://github.com/marciaibanez/vestibulum#readme",
-  "dependencies": {
-    "@glidejs/glide": "^3.0.3"
-  },
+  "author": "Gustavo Verzola <verzola@gmail.com>",
   "devDependencies": {
-    "parcel-bundler": "^1.8.1",
-    "babel-preset-env": "^1.6.1",
-    "node-sass": "^4.9.0"
-  }
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "autoprefixer": "^9.3.1",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "clean-webpack-plugin": "^1.0.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.1",
+    "cssnano": "^4.1.7",
+    "eslint": "^5.9.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-prettier": "^3.0.0",
+    "file-loader": "^2.0.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^1.2.0",
+    "imagemin-webpack-plugin": "^2.3.0",
+    "lint-staged": "^8.1.0",
+    "mini-css-extract-plugin": "^0.4.5",
+    "node-sass": "^4.10.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "prettier": "1.15.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "stylelint": "^9.8.0",
+    "stylelint-config-recommended-scss": "^3.2.0",
+    "stylelint-scss": "^3.4.0",
+    "stylelint-webpack-plugin": "^0.10.5",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.26.0",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.2.4",
+    "normalize.css": "^8.0.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 version",
+    "IE 10"
+  ]
 }
